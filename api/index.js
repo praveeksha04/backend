@@ -8,7 +8,7 @@ require('dotenv').config()
 const connectDB=require('../connect/connect')
 
  app.use(cors())
-app.use('/api/v1',router)
+app.use('/',router)
 
 const start =async()=>{
     try {
